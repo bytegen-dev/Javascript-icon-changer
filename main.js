@@ -18,9 +18,11 @@ iconI.addEventListener("click", ()=>{
     favicon.setAttribute("href", "./number-1.png")
     body.classList.add("anim")
     setTimeout(()=>{
-        img.setAttribute("src", "./number-1.png")
         body.classList.remove("anim")
     }, 500)
+    setTimeout(()=>{
+        img.setAttribute("src", "./number-1.png")
+    }, 250)
 })
 
 iconIi.addEventListener("click", ()=>{
@@ -32,9 +34,11 @@ iconIi.addEventListener("click", ()=>{
     favicon.setAttribute("href", "./number-2.png")
     body.classList.add("anim")
     setTimeout(()=>{
-        img.setAttribute("src", "./number-2.png")
         body.classList.remove("anim")
     }, 500)
+    setTimeout(()=>{
+        img.setAttribute("src", "./number-2.png")
+    }, 250)
 })
 
 iconIii.addEventListener("click", ()=>{
@@ -46,9 +50,11 @@ iconIii.addEventListener("click", ()=>{
     favicon.setAttribute("href", "./number-3.png")
     body.classList.add("anim")
     setTimeout(()=>{
-        img.setAttribute("src", "./number-3.png")
         body.classList.remove("anim")
     }, 500)
+    setTimeout(()=>{
+        img.setAttribute("src", "./number-3.png")
+    }, 250)
 })
 
 iconIv.addEventListener("click", ()=>{
@@ -60,9 +66,11 @@ iconIv.addEventListener("click", ()=>{
     favicon.setAttribute("href", "./number-4.png")
     body.classList.add("anim")
     setTimeout(()=>{
-        img.setAttribute("src", "./number-4.png")
         body.classList.remove("anim")
     }, 500)
+    setTimeout(()=>{
+        img.setAttribute("src", "./number-4.png")
+    }, 250)
 })
 
 window.addEventListener("contextmenu", (e)=>{
