@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(140, 174, 210);
+    font-family: monospace, sans-serif;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 10vw;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+}
+
+h1{
+    position: absolute;
+    top: 30px;
+    width: 100vw;
+    padding: 0 10vw;
+    line-height: 50px;
+}
+
+.controls{
+    background-color: rgb(17, 42, 68);
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.controls button{
+    padding: 15px 20px;
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    max-width: 70vw;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.controls button:hover{
+    background-color: rgb(229, 168, 157);
+    /* color: #fff; */
+}
+
+.controls button.active{
+    background-color: tomato;
+    color: #fff;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    padding: 30px 10vw;
+    background-color: #000;
+    width: 100vw;
+}
+
+footer a{
+    color: #fff;
+    transition: all 0.5s ease;
+}
+
+footer a:hover{
+    color: gold;
+}
