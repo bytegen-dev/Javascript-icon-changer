@@ -54,6 +54,11 @@ img:hover{
     border-color: #fff;
 }
 
+.anim img{
+    opacity: 0;
+    transform: scale(0);
+}
+
 .controls button{
     padding: 15px 20px;
     border: none;
