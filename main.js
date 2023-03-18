@@ -7,6 +7,8 @@ const click = document.querySelectorAll(".click")
 const favicon = document.getElementById("favicon")
 const img = document.getElementById("number")
 const body = document.querySelector("body")
+var timeout
+var timeoutx
 // const favicon = document.querySelector("link[rel='icon']")
 
 iconI.addEventListener("click", ()=>{
@@ -17,10 +19,12 @@ iconI.addEventListener("click", ()=>{
     iconI.classList.add("active")
     favicon.setAttribute("href", "./number-1.png")
     body.classList.add("anim")
-    setTimeout(()=>{
+    clearTimeout(timeout)
+    clearTimeout(timeoutx)
+    timeout = setTimeout(()=>{
         body.classList.remove("anim")
     }, 500)
-    setTimeout(()=>{
+    timeoutx = setTimeout(()=>{
         img.setAttribute("src", "./number-1.png")
     }, 250)
 })
@@ -33,10 +37,12 @@ iconIi.addEventListener("click", ()=>{
     iconIi.classList.add("active")
     favicon.setAttribute("href", "./number-2.png")
     body.classList.add("anim")
-    setTimeout(()=>{
+    clearTimeout(timeout)
+    clearTimeout(timeoutx)
+    timeout = setTimeout(()=>{
         body.classList.remove("anim")
     }, 500)
-    setTimeout(()=>{
+    timeoutx = setTimeout(()=>{
         img.setAttribute("src", "./number-2.png")
     }, 250)
 })
@@ -49,10 +55,12 @@ iconIii.addEventListener("click", ()=>{
     iconIii.classList.add("active")
     favicon.setAttribute("href", "./number-3.png")
     body.classList.add("anim")
-    setTimeout(()=>{
+    clearTimeout(timeout)
+    clearTimeout(timeoutx)
+    timeout = setTimeout(()=>{
         body.classList.remove("anim")
     }, 500)
-    setTimeout(()=>{
+    timeoutx = setTimeout(()=>{
         img.setAttribute("src", "./number-3.png")
     }, 250)
 })
@@ -65,10 +73,12 @@ iconIv.addEventListener("click", ()=>{
     iconIv.classList.add("active")
     favicon.setAttribute("href", "./number-4.png")
     body.classList.add("anim")
-    setTimeout(()=>{
+    clearTimeout(timeout)
+    clearTimeout(timeoutx)
+    timeout = setTimeout(()=>{
         body.classList.remove("anim")
     }, 500)
-    setTimeout(()=>{
+    timeoutx = setTimeout(()=>{
         img.setAttribute("src", "./number-4.png")
     }, 250)
 })
