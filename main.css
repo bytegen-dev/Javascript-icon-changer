@@ -54,7 +54,7 @@ h1{
 }
 
 .controls button.active{
-    background-color: tomato;
+    background-color: #ff6347;
     color: #fff;
 }
 
