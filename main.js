@@ -5,6 +5,7 @@ const iconIv = document.getElementById("iconiv")
 const click = document.querySelectorAll(".click")
 
 const favicon = document.getElementById("favicon")
+const img = document.getElementById("number")
 // const favicon = document.querySelector("link[rel='icon']")
 
 iconI.addEventListener("click", ()=>{
@@ -14,6 +15,7 @@ iconI.addEventListener("click", ()=>{
     })
     iconI.classList.add("active")
     favicon.setAttribute("href", "./number-1.png")
+    img.setAttribute("src", "./number-1.png")
 })
 
 iconIi.addEventListener("click", ()=>{
@@ -23,6 +25,7 @@ iconIi.addEventListener("click", ()=>{
     })
     iconIi.classList.add("active")
     favicon.setAttribute("href", "./number-2.png")
+    img.setAttribute("src", "./number-2.png")
 })
 
 iconIii.addEventListener("click", ()=>{
@@ -32,6 +35,7 @@ iconIii.addEventListener("click", ()=>{
     })
     iconIii.classList.add("active")
     favicon.setAttribute("href", "./number-3.png")
+    img.setAttribute("src", "./number-3.png")
 })
 
 iconIv.addEventListener("click", ()=>{
@@ -41,6 +45,7 @@ iconIv.addEventListener("click", ()=>{
     })
     iconIv.classList.add("active")
     favicon.setAttribute("href", "./number-4.png")
+    img.setAttribute("src", "./number-4.png")
 })
 
 window.addEventListener("contextmenu", (e)=>{
