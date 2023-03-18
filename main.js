@@ -86,3 +86,9 @@ iconIv.addEventListener("click", ()=>{
 window.addEventListener("contextmenu", (e)=>{
     e.preventDefault()
 })
+
+const cursor = document.querySelector(".cursor")
+window.addEventListener("mousemove", (e)=>{
+    cursor.style.top = `${e.clientY}px`
+    cursor.style.left = `${e.clientX}px`
+})

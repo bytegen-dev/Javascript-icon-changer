@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    cursor: none !important;
 }
 
 body{
@@ -51,7 +52,7 @@ h1{
     flex-wrap: wrap;
 }
 
-img{
+.container img{
     margin-bottom: 40px;
     width: 60px;
     height: 60px;
@@ -62,12 +63,12 @@ img{
     /* border: 2px solid; */
 }
 
-img:hover{
+.container img:hover{
     filter: invert();
     border-color: #fff;
 }
 
-.anim img{
+.anim .container img{
     opacity: 0;
     transform: scale(0);
 }
@@ -109,4 +110,21 @@ footer a{
 
 footer a:hover{
     color: gold;
+}
+
+.cursor{
+    position: fixed;
+    z-index: 10;
+    width: 20px;
+    height: 20px;
+    pointer-events: none;
+    user-select: none;
+    transition: all 0.1s ease;
+    filter: invert();
+}
+
+@media screen and (max-width: 700px) and (orientation: portrait) {
+    .cursor{
+        display: none;
+    }
 }
