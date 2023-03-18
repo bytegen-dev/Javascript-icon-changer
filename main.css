@@ -12,19 +12,19 @@ body{
     text-align: center;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     padding: 0 10vw;
     -webkit-tap-highlight-color: transparent;
     user-select: none;
+    min-height: 550px;
 }
 
 h1{
-    position: absolute;
-    top: 30px;
-    width: 100vw;
-    padding: 0 10vw;
+    /* position: absolute; */
     line-height: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .controls{
@@ -80,11 +80,12 @@ img:hover{
 }
 
 footer{
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
     padding: 30px 10vw;
     background-color: #000;
     width: 100vw;
+    margin-top: 30px;
 }
 
 footer a{
