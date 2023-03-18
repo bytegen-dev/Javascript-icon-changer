@@ -6,7 +6,10 @@
 
 body{
     width: 100vw;
-    height: 100vh;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
     background-color: rgb(140, 174, 210);
     font-family: monospace, sans-serif;
     text-align: center;
